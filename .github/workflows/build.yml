@@ -56,6 +56,7 @@ jobs:
             python -m pip install poetry
             python -m pip install typer
             git clone https://github.com/GatorEducator/gatorgrade.git
+            cd gatorgrade
             git fetch --all
             git checkout fix/error-code-fail
             poetry build
