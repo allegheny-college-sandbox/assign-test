@@ -53,5 +53,10 @@ jobs:
         - name: Run GatorGrader with GatorGrade
           if: always()
           run:  |
-            pip install gatorgrade
+            python -m pip install poetry
+            python -m pip install typer
+            git clone https://github.com/allegheny-college-sandbox/assign-test.git
+            git checkout --track origin/fix/error-code-fail
+            poetry build
+            pip install .
             gatorgrade --config config/gatorgrade.yml
