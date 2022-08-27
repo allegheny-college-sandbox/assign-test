@@ -1,5 +1,5 @@
 """Demonstrate the limitations of using different variables"""
-# TODO
+
 feasible_number = 2**2**8
 print(f"The value of a feasible number is {feasible_number}")
 print()
