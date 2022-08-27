@@ -58,7 +58,7 @@ jobs:
             git clone https://github.com/GatorEducator/gatorgrade.git
             cd gatorgrade
             git fetch --all
-            git checkout fix/error-code-fail
+            git branch
             poetry build
             pip install .
             gatorgrade --config config/gatorgrade.yml
