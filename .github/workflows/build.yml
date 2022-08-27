@@ -58,7 +58,8 @@ jobs:
             git clone https://github.com/GatorEducator/gatorgrade.git
             cd gatorgrade
             git fetch --all
-            git branch
+            git checkout --track origin/fix/error-code-on-fail
             poetry build
             pip install .
+            cd ..
             gatorgrade --config config/gatorgrade.yml
